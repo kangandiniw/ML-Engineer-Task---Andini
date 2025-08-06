@@ -15,24 +15,19 @@ Train the model on a structured dataset of user prompts and multi-step task inst
 
 
 ## Task-Oriented Integration (Functional Design)
-This function can be integrated into any task-oriented application such as helpdesk systems, support bots, or digital agents:
 
-def generate_structured_instruction(user_prompt: str) -> str:
-    formatted_prompt = f"### Instruction:\n{user_prompt}\n\n### Response:\n"
-    result = pipe(formatted_prompt, max_new_tokens=200, temperature=0.7)
-    return result[0]["generated_text"]
+1. Once the model is fine-tuned, it can be deployed for structured instruction generation in a user-facing application such as a helpdesk chatbot or mobile assistant.
+- task-oriented.py
     
-🔄 Example Usage:
+2. Workflow Integration Use Case
+Example Input Prompt:
+“How do I reset my password in the Bukalapak mobile app?”
 
-user_intent = "How can I reset my password in the Shopee mobile app?"
-print(generate_structured_instruction(user_intent))
-
-✅ Expected Output:
-
-1. Open the Shopee app on your device.  
-2. Go to the login screen.  
-3. Tap on the “Forgot Password” link.  
-4. Enter your registered phone number or email.  
-5. Tap “Submit” to receive a reset link or code.  
-6. Follow the instructions sent to reset your password.  
-7. Create and confirm your new password.
+Expected Structured Output:
+1. Open the Bukalapak mobile app.
+2. Tap on the “Login” button.
+3. Click on the “Forgot Password” link.
+4. Enter your registered email address.
+5. Tap on “Submit” to request a reset link.
+6. Check your email inbox for the reset link.
+7. Click on the link and follow the instructions to set a new password.
