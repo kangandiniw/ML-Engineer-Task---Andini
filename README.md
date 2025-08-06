@@ -1,7 +1,6 @@
 # ML-Engineer-Task---Andini
 
-# 1. Choose an Open-Source LLM
-## Mistral-7B Instruct
+# 1. Choose an Open-Source LLM - Mistral-7B Instruct
 
 Mistral-7B Instruct represents a well-balanced open-source LLM that combines strong instruction-following behavior, structured output generation, computational efficiency, and commercial viability. Its capabilities make it highly effective for transforming user intent into structured, task-oriented outputs — both in research contexts and production-level systems.
 
