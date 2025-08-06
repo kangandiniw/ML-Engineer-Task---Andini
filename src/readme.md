@@ -29,5 +29,5 @@ Train the model on a structured dataset of user prompts and multi-step task inst
    3. Click on the “Forgot Password” link.
    4. Enter your registered email address.
    5. Tap on “Submit” to request a reset link.
-6. Check your email inbox for the reset link.
-7. Click on the link and follow the instructions to set a new password.
+   6. Check your email inbox for the reset link.
+   7. Click on the link and follow the instructions to set a new password.
